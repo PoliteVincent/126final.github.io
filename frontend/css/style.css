@@ -1,0 +1,52 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    z-index: 10;
+    
+}
+
+
+
+#logo {
+    display: flex;
+    flex-direction: row;
+
+    /* z-index: 10; */
+
+
+}
+#logo img{
+    /* width:33%; */
+    height:40%;
+    align-self: center;
+    margin-left:100px;
+    margin-right: 50px;
+    border-radius: 40px;
+
+}
+
+#logo p {
+    align-self: center;
+}
+
+#name{
+    display: inline;
+}
+
+
+
+#nav-div {
+    align-self:center;
+    /* width:100%; */
+    /* position: absolute; */
+    /* background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10; */
+}
+
+

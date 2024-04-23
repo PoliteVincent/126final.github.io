@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coaching Hub</title>
+        <!-- StyleSheet for general content: -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- StyleSheet for navigation bar: -->
+        <link href="css/navigation.css" rel="stylesheet">
+        <!-- StyleSheet for Video Background -->
+        <link href="css/video.css" rel="stylesheet">
+        <!-- StyleSheet for Info Session -->
+        <link href="css/info.css" rel="stylesheet">
+        <!-- StyleSheet for ScrollSpy -->
+        <link href="css/scrollspy.css" rel="stylesheet">
+        <!-- StyleSheet for WhyChooseUs -->
+        <link href="css/chooseUs.css" rel="stylesheet">
+        <!-- StyleSheet for Foorter -->
+        <link href="css/footer.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                <img src="pic/unc_logo.png" alt="The logo of UNC">
+                <p id="name">Coaching Club</p>
+            </div>
+
+            <nav id="nav-div">
+                <ul id="navigation">
+                    <li class="DropBTN">
+                        Home
+                    </li>
+                    <li>
+                        <div class="DropDown">
+                            <button class="DropBTN">About Us</button>
+                            <div class="dropdown-content">
+                                <a href="#">Our Mission</a>
+                                <a href="#">Join Us</a>
+                                <a href="#">Listen from Us</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="DropBTN"><a href="#" class="DropBTN">Team</a></li>
+                    <li class="DropBTN">Contact</li>
+                    <li>
+                        <div class="DropDown">
+                            <button class="DropBTN">Apply Now</button>
+                            <div class="dropdown-content">
+                                <a href="#">Be a Coach</a>
+                                <a href="#">Be a Client</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" id="SignIn" class="DropBTN">Sign In</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <main>
+            <div id="welcome">
+                <div id="video-background">
+                    <!-- <video autoplay loop muted playsinline>
+                        <source src="path_to_your_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video> -->
+                    <div id="video-text">
+                        <h1>Coaching for the Success</h1>
+                        <h2>CoachingHub is a student organized platform to connect professional expert services with students needed</h2>
+                        <p>Let us make your future bright!</p>
+                        <a href="#" class="button">COACHING</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Waiting for implemented -->
+            <div id="scrollspy"> 
+                <ul>
+                    <li><a href="#section1">Section 1</a></li>
+                    <li><a href="#section2">Section 2</a></li>
+                    <li><a href="#section3">Section 3</a></li>
+                </ul>
+            </div>
+
+            <div id="introText">
+                <p>UBC Coaching Services is committed to advancing the vision of UBC's organizational coaching culture with a focus on leadership, career, health and wellbeing, conflict and change.
+
+                Coaching Services is for UBC faculty and staff, and includes individual, group and custom coaching partnerships. 
+                Coaching is an inquiry-based process with the coach acting as a thought-partner, through the demonstration of active listening and curiosity. Coaching supports goal-setting, accountability and action by surfacing new awareness, insights and learning. 
+                It is not counselling or therapy.</p>
+            </div>
+
+            <div id="chooseUs">
+                <h3>Why Choosing US?</h3>
+            </div>
+
+            <div id="reviewGallery">
+                <div class="carousel-slide">
+                    <div class="text-content">"Joining this coaching service was the best decision I've ever made for my personal development. The coaches are incredibly knowledgeable and tailor their advice to your specific needs. I've seen remarkable growth in my confidence and decision-making skills. Highly recommended!"</div>
+                    <div class="text-content">"Phenomenal experience! The one-on-one sessions have been transformative for my career. My coach was not only a mentor but also a great friend who genuinely cared about my progress. Thanks to this service, I've landed my dream job and couldn't be happier."</div>
+                    <div class="text-content">"Absolutely life-changing! The depth of knowledge and insight from my coach has helped me navigate through personal and professional challenges with ease. The support and encouragement from this community are unmatched. I'm so grateful to be a part of this!"</div>
+                    <div class="text-content">"I was a bit skeptical at first, but this coaching service has exceeded my expectations. The weekly sessions are insightful and motivating. I only wish they had a more flexible scheduling system, but otherwise, it's been a fantastic journey."
+                    <div class="text-content">"The coaching sessions were good, but I didn't find them as personalized as I hoped. While the general advice was beneficial, I felt it lacked the depth in addressing my unique challenges. It's a decent service if you're looking for broad guidance."</div>
+                    <!-- More text items -->
+                </div>
+                <button id="prevBtn" onclick="moveSlide(-1)">&#10094;</button>
+                <button id="nextBtn" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="container">
+                <div class="innerContainer">
+                    <div class="pic1">
+                        <div class="Infotext">
+                            <h2>What is Coaching?</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="pic2">
+                        <div class="Infotext">
+                            <h2>Why need Coaching?</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="bigger">
+                    <div class="Infotext">
+                        <h2>Listen to the Previous Voice</h2>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <footer>
+            <!-- <div class="foot"> -->
+            <div class="FooterLabel">                
+                <p>a COMP 126 production --By Vincent Li</p>
+            </div>
+            <div class="PersonalInfo">
+                <address>
+                    Email: <a href="vinceli@unc.edu">vinceli@unc.edu</a>
+                    <br>
+                    Phone: (415) 200-6799
+                    <br>
+                    <p> PID: 730610124 </p>
+                </address>
+            </div>
+            <div id="certificate">
+                <a href="https://coachingfederation.org/">ICF Certificate</a>
+            </div>
+
+            <!-- </div> -->
+        </footer>
+    </body>
+</html>

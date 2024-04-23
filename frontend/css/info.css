@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* height: 700px; */
+    width: 100%;
+    margin-top: 20px;
+    gap: 10px;
+
+  }
+
+.innerContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: unwrap;
+    max-width:1000px;
+    width: 33%;
+    justify-content: center;
+    gap: 1rem;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+  
+  }
+  
+  .pic1 {
+    border-radius: 30px;
+    height: auto;
+    display: block;
+    background-image: url("../pic/222.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+  
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  
+  .pic2 {
+    border-radius: 30px;
+    height: auto;
+    display: block;
+    background-image: url("../pic/333.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+  
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  
+  .bigger {
+    background-image: url("../pic/StaticPageHeader_1600x1200_Snowboard_Jamie_Action_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+  
+    width: 66%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 30px;
+  }

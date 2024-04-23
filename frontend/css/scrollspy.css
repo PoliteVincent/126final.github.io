@@ -1,0 +1,27 @@
+#scrollspy{
+    width: 30%; 
+    position:sticky;
+    top:0;
+    z-index: 1;
+    background-color: gray;
+    border-radius: 10px;
+    margin:auto;
+}
+
+#scrollspy ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+   
+}
+
+#scrollspy ul li {
+    margin-right:30px;
+}
+
+#scrollspy ul a {
+    text-decoration: none;
+}
+
+
