@@ -1,0 +1,261 @@
+
+*  {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+header {
+    background-color: rgb(0, 48, 135, 0.9);
+    position: relative;
+}
+
+.header {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.header h1 {
+    margin-left: 30px;
+}
+
+.nav {
+    align-self: center;
+}
+
+
+nav ul li {
+    font-size: 1.2em;
+}
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+.menu-item {
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}   
+
+
+.DropDown:hover .dropdown-content {
+    display: block;
+}
+
+.DropDown:hover .DropBTN{
+    background-color: rgb(123, 175, 212);
+}
+
+
+
+@media only screen and (min-width: 767px) {
+
+
+    header h1 {
+        width:30%;
+    }
+
+    #video-background {
+        display: block;
+        position: relative;
+        top:-192px;
+        left:0;
+        width: 100%;
+        height: 1000px;
+        background-image: url(../pic/111.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    
+    #video-text {
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        z-index: 1;
+        text-align: center;
+        color:white;
+    }
+    
+    .video-background {
+        position: relative;
+        width: 100%; 
+        height: 100%;
+        overflow: hidden;
+    }
+      
+    .video-background video {
+        /* Make video to at least 100% wide/tall */
+        min-width: 100%; 
+        min-height: 100%; 
+      
+        /* Setting width and height to auto prevents the browser from stretching or squishing the video */
+        width: auto;
+        height: auto;
+      
+        /* Center the video */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        z-index: -1; /* Put the video behind other content */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        /* height: 700px; */
+        width: 100%;
+        margin-top: 20px;
+        gap: 10px;
+    
+      }
+    
+    
+    .innerContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: unwrap;
+        max-width:1000px;
+        width: 33%;
+        justify-content: center;
+        gap: 1rem;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+      
+      }
+      
+      .pic1 {
+        border-radius: 30px;
+        height: auto;
+        display: block;
+        background-image: url("../pic/222.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+      
+        width: 100%;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        border-radius: 30px;
+      }
+      
+      .pic2 {
+        border-radius: 30px;
+        height: auto;
+        display: block;
+        background-image: url("../pic/333.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+      
+        width: 100%;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        border-radius: 30px;
+      }
+      
+      .bigger {
+        background-image: url("../pic/StaticPageHeader_1600x1200_Snowboard_Jamie_Action_1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+      
+        width: 66%;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        border-radius: 30px;
+      }
+
+      #scrollspy{
+        width: 30%; 
+        position:sticky;
+        top:0;
+        z-index: 1;
+        background-color: gray;
+        border-radius: 10px;
+        margin:auto;
+    }
+    
+    #scrollspy ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+       
+    }
+    
+    #scrollspy ul li {
+        margin-right:30px;
+    }
+    
+    #scrollspy ul a {
+        text-decoration: none;
+    }
+    
+    
+    
+
+      #chooseUs {
+        position: relative;
+        background-image: url(../pic/whyChossing\Us.png);
+        background-position: center;
+        background-size: cover;
+        height: 1000px;
+        overflow: hidden;
+    }
+    
+    #chooseUs::before {
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255,255, 0));
+        pointer-events: none;
+    }
+
+    footer {
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        padding: 20px;
+        width: 100%;
+    }
+    
+    footer p {
+        color: white;
+        font-weight:bold;
+    }
+
+  }
+  
