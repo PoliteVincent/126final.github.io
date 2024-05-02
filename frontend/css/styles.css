@@ -140,6 +140,10 @@ header {
   flex-direction: row;
   align-items: flex-end;
 }
+
+  .js .nav-collapse {
+    overflow: visible;
+  }
   
   .nav-collapse li {
     width: auto;
