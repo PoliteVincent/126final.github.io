@@ -170,7 +170,6 @@ nav ul li:hover {
     background-color: #ff69b4; 
   }
   
-  
 
   
   .join-us{
@@ -190,7 +189,17 @@ nav ul li:hover {
     display: flex;
     flex-direction: row;
   }
-  
+  .pic-container img{
+    transition: transform 1s ease; 
+    animation-name: scaleDown; 
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .pic-container img:hover {
+    animation-name: scaleUp; 
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
   .validation-message {
     display: none;
     background-color: #f3e5f5; 
