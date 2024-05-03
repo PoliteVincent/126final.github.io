@@ -73,9 +73,6 @@ nav ul li:hover {
     background-color: rgb(123, 175, 212);
 }
 
-
-
-
 .main{
     display: grid;
     grid-template-columns: auto;
@@ -96,7 +93,6 @@ nav ul li:hover {
     text-align: left;
     padding: 2em;
     box-shadow: 1px 1px #eeeeee;
-    margin-right: 50px;
   }
   
   .signup h2 {
@@ -105,6 +101,7 @@ nav ul li:hover {
   }
   
   .signup form {
+    justify-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -114,27 +111,25 @@ nav ul li:hover {
   
   .signup input {
     border-radius: 5px;
-    width: 600px; 
     padding: 0.5em;
     margin-bottom: 0.5em;
-    height: 30px;
+    height: 50px;
     border: 1px solid #888888; 
   }
   
   .sigup input:hover{
-    outline: 2px, solid, #8a2be2; 
+    outline: 2px, solid, rgb(0, 48, 135, 0.9); 
   }
   .signup button {
     margin-top: 30px;
-    border-radius: 5px;
-    width: 615px; 
     height: 40px;
+    border-radius: 5px;
     padding: 0.5em;
     color: white;
     border: none;
     cursor: pointer;
     transition: all 1s ease;
-    background: linear-gradient(to right, #f721cb 0%, purple 50%, #363793 100%);
+    background: linear-gradient(to right, rgb(123, 175, 212) 0%, blue, rgb(0, 48, 135, 0.9));
     background-size: 200%;
   }
   
@@ -164,8 +159,6 @@ nav ul li:hover {
     color:white;
     background-color: #363793;
     border-radius: 5px;
-    width: 150px;
-    height: 40px;
     margin: 0px;
     border: 0px;
     transition: background-color 1s ease;
@@ -226,16 +219,21 @@ nav ul li:hover {
     width: 50%;
     height: auto;
   }
-  footer{
-    grid-column: 1 / 5;
-  }
-  .footer {
-    grid-row:4;
-    text-align: center;
-    justify-items: stretch;
-    grid-column: 1 / 5;
-    background-color: #9f9c9c;
-  }
+  footer {
+    margin-top:10px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    font-weight:bold;
+}
 
 @media only screen and (min-width: 767px) {
 
@@ -259,7 +257,7 @@ nav ul li:hover {
 
     .main {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
       }
       

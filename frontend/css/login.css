@@ -1,5 +1,4 @@
 
-
 .main{
   display: grid;
   grid-template: auto;
@@ -17,20 +16,12 @@
   justify-content: space-between;
   border: none;
 }
-.learn-more h1 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+
 .learn-more button {
   font-size: large;
   color:white;
   background-color: #363793;
   border-radius: 5px;
-  width: 150px;
-  height: 40px;
-  margin: 0px;
-  border: 0px;
   transition: background-color 1s ease;
 }
 
