@@ -148,6 +148,8 @@ nav ul li:hover {
     align-content: center;
     justify-content: space-between;
     border: none;
+    position: relative;
+    height: 300px;
   }
   .learn-more h1 {
     margin: 0;
@@ -188,6 +190,8 @@ nav ul li:hover {
   .pic-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
   }
   .pic-container img{
     transition: transform 1s ease; 
@@ -223,6 +227,29 @@ nav ul li:hover {
       transform: scale(1);
     }
   }
+  .learn-more h1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    color: black;
+  }
+
+  .introtext {
+    position: absolute;
+    left: -200%;
+    top:30%;
+    transition: left 1s ease;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .learn-more:hover .introtext{
+    top:30%;
+    left: 15%;
+  }
+
+
   
   .pic-container img{
     width: 50%;
@@ -298,5 +325,18 @@ footer p {
         max-width: 300px;
         max-height: 300px;
       }
+
+      
+  .introtext {
+    top:-100%;
+    left: 35%;
+    transition: top 1s ease;
+
+  }
+
+  .learn-more:hover .introtext{
+    top:62%;
+    left: 35%;
+  }
     }
     
