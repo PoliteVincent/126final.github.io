@@ -25,9 +25,9 @@
                 <div class="DropDown">
                   <a href="" data-scroll class="DropBTN">About Us</a>
                   <div class="dropdown-content" id="d1">
-                    <a href="#">Our Mission</a>
-                    <a href="#">Join Us</a>
-                    <a href="#">Listen from Us</a>
+                    <a href="about.html">Our Mission</a>
+                    <a href="login.html">Join Us</a>
+                    <a href="about.html">Listen from Us</a>
                   </div>
                 </div>
             </li>
@@ -36,13 +36,13 @@
                 <div class="DropDown">
                   <a href="" data-scroll class="DropBTN">Apply Now</a>
                   <div class="dropdown-content" id="d2">
-                    <a href="#">Be a Coach</a>
-                    <a href="#">Be a Client</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZRzObqUl590IITCI9Rx8Z4Sz5NhyaWwDscFf9fTVil-4vSg/viewform?usp=sf_link">Be a Coach</a>
+                    <a href="login.html">Be a Client</a>
                   </div>
                 </div>
               </li>
-              <li class="menu-item"><a href="" data-scroll>Contact Us</a></li>
-              <li class="menu-item"><a href="" data-scroll>Sign In</a></li>
+              <li class="menu-item"><a href="mailto:vinceli@unc.edu.com" data-scroll>Contact Us</a></li>
+              <li class="menu-item"><a href="login.html" data-scroll>Sign In</a></li>
             </ul>
           </nav>
         </div>
@@ -61,7 +61,7 @@
                   <h1>Coaching for the Success</h1>
                   <h2>CoachingHub is a student organized platform to connect professional expert services with students needed</h2>
                   <p>Let us make your future bright!</p>
-                  <button type="submit" href="#" id="coaching">
+                  <button type="submit" href="login.html" id="coaching">
                     Coaching
                   </button>              
               </div>
@@ -78,9 +78,9 @@
       <!-- Waiting for implemented -->
       <div id="scrollspy"> 
           <ul>
-              <li><a href="#section1">Section 1</a></li>
-              <li><a href="#section2">Section 2</a></li>
-              <li><a href="#section3">Section 3</a></li>
+              <li><a href="#introText">Section 1</a></li>
+              <li><a href="#reviewGallery">Section 2</a></li>
+              <li><a href="#section2">Section 3</a></li>
           </ul>
       </div>
 
@@ -95,18 +95,43 @@
       <div id="reviewGallery">
         <div class="review">
           <div class="text-content">"Joining this coaching service was the best decision I've ever made for my personal development. The coaches are incredibly knowledgeable and tailor their advice to your specific needs. I've seen remarkable growth in my confidence and decision-making skills. Highly recommended!"</div>
-          <div class="text-content">"Phenomenal experience! The one-on-one sessions have been transformative for my career. My coach was not only a mentor but also a great friend who genuinely cared about my progress. Thanks to this service, I've landed my dream job and couldn't be happier."</div>
-          <div class="text-content">"Absolutely life-changing! The depth of knowledge and insight from my coach has helped me navigate through personal and professional challenges with ease. The support and encouragement from this community are unmatched. I'm so grateful to be a part of this!"</div>
-          <!-- <div class="text-content">"I was a bit skeptical at first, but this coaching service has exceeded my expectations. The weekly sessions are insightful and motivating. I only wish they had a more flexible scheduling system, but otherwise, it's been a fantastic journey."</div>
-          <div class="text-content">"The coaching sessions were good, but I didn't find them as personalized as I hoped. While the general advice was beneficial, I felt it lacked the depth in addressing my unique challenges. It's a decent service if you're looking for broad guidance."</div> -->
+          <div class="text-content" id="review2" style="display:none;">"Phenomenal experience! The one-on-one sessions have been transformative for my career. My coach was not only a mentor but also a great friend who genuinely cared about my progress. Thanks to this service, I've landed my dream job and couldn't be happier."</div>
+          <div class="text-content" id="review3" style="display:none;">"Absolutely life-changing! The depth of knowledge and insight from my coach has helped me navigate through personal and professional challenges with ease. The support and encouragement from this community are unmatched. I'm so grateful to be a part of this!"</div>
+          <div class="text-content" id="review4" style="display:none;">"I was a bit skeptical at first, but this coaching service has exceeded my expectations. The weekly sessions are insightful and motivating. I only wish they had a more flexible scheduling system, but otherwise, it's been a fantastic journey."</div>
+          <div class="text-content" id="review5" style="display:none;">"The coaching sessions were good, but I didn't find them as personalized as I hoped. While the general advice was beneficial, I felt it lacked the depth in addressing my unique challenges. It's a decent service if you're looking for broad guidance."</div>
         </div>
         <div class="button">
-          <button id="prevBtn" onclick="moveSlide(-1)">&#10094;</button>
-          <button id="nextBtn" onclick="moveSlide(1)">&#10095;</button>
+          <button id="prevBtn" onclick="previousReview()">&#10094;</button>
+          <button id="nextBtn" onclick="nextReview()">&#10095;</button>
         </div>
       </div>
+      <script>
+        let currentReviewIndex = 0;
+        const reviews = document.querySelectorAll('.text-content');
+        
+        function showReview(index) {
+            reviews.forEach(review => {
+                review.style.display = 'none';
+            });
+            // Show the current review
+            reviews[index].style.display = 'block';
+        }
+        
+        function nextReview() {
+            currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+            showReview(currentReviewIndex);
+        }
+        
+        function previousReview() {
+            currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
+            showReview(currentReviewIndex);
+        }
+        
+        // Initialize the first review
+        showReview(currentReviewIndex);
+        </script>
 
-        <div class="innerContainer">
+        <div class="innerContainer" id="section2">
           <h3 id="t1"> What is Coaching?</h3>
           <div class="pic1">
               <div class="Infotext">
