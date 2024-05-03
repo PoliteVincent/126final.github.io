@@ -3,7 +3,19 @@
   font-weight: 400;
   font-style: normal;
 }
-
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-family: "Jersey 10", sans-serif;
+}
+h2,
+h3,
+p {
+  font-family: "Kanit", sans-serif;
+}
 header {
   background-color: rgb(0, 48, 135, 0.9);
   position: relative;
@@ -137,11 +149,8 @@ main {
 
 footer {
   margin-top: 10px;
-  background-color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  color: white;
+  background-color: rgb(0, 48, 135);
   padding: 20px;
   width: 100%;
 }
@@ -149,6 +158,9 @@ footer {
 footer p {
   color: white;
   font-weight: bold;
+}
+footer a {
+  color: white;
 }
 
 .mission p {
@@ -160,11 +172,11 @@ footer p {
   color: black;
 }
 .mission h1 {
-  color:black;
+  color: black;
   transition: color 1s ease;
 }
-.mission:hover h1{
-  color:white;
+.mission:hover h1 {
+  color: white;
 }
 
 .vision p {
@@ -176,11 +188,11 @@ footer p {
   color: black;
 }
 .vision h1 {
-  color:black;
+  color: black;
   transition: color 1s ease;
 }
-.vision:hover h1{
-  color:white;
+.vision:hover h1 {
+  color: white;
 }
 
 .do p {
@@ -192,11 +204,11 @@ footer p {
   color: black;
 }
 .do h1 {
-  color:black;
+  color: black;
   transition: color 1s ease;
 }
-.do:hover h1{
-  color:white;
+.do:hover h1 {
+  color: white;
 }
 
 .are p {
@@ -208,11 +220,11 @@ footer p {
   color: black;
 }
 .are h1 {
-  color:black;
+  color: black;
   transition: color 1s ease;
 }
-.are:hover h1{
-  color:white;
+.are:hover h1 {
+  color: white;
 }
 
 @media only screen and (min-width: 767px) {
