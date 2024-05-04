@@ -143,7 +143,7 @@ input {
   }
   
   .sigup input:hover{
-    outline: 2px, solid, rgb(0, 48, 135, 0.9); 
+    outline: 2px solid rgb(0, 48, 135, 0.9); 
   }
 
   .signup input:focus {

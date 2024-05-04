@@ -329,10 +329,10 @@ footer a {
 
   .upper {
     display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     justify-content: space-between;
-  }
+}
   .mission {
     grid-column: 1;
     grid-row: 1;
@@ -360,10 +360,10 @@ footer a {
     grid-row: 3;
   }
   .lower {
-    grid-row: 2;
+    grid-row: 2; 
     display: grid;
-    grid-template-columns: 2;
-  }
+    grid-template-columns: repeat(2, 1fr); 
+}
   .do {
     grid-column: 1;
     text-align: center;
