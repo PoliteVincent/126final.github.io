@@ -42,6 +42,11 @@ nav ul li:hover {
   text-decoration: underline;
 }
 
+nav ul li:focus {
+  text-decoration: underline;
+  outline: none; 
+}
+
 .menu-item {
   color: white;
 }
@@ -72,12 +77,23 @@ nav ul li:hover {
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
+.dropdown-content a:focus {
+  background-color: #f1f1f1;
+  outline: none; 
+}
 
 .DropDown:hover .dropdown-content {
   display: block;
 }
+.DropDown:focus .dropdown-content {
+  display: block;
+}
 
 .DropDown:hover .DropBTN {
+  background-color: rgb(123, 175, 212);
+}
+
+.DropDown:focus .DropBTN {
   background-color: rgb(123, 175, 212);
 }
 
@@ -227,6 +243,37 @@ footer a {
   color: white;
 }
 
+.mission:focus p,
+.mission:focus h1,
+.vision:focus p,
+.vision:focus h1,
+.do:focus p,
+.do:focus h1,
+.are:focus p,
+.are:focus h1 {
+  color: black;
+  outline: none; 
+}
+
+.mission:focus h1,
+.vision:focus h1,
+.do:focus h1,
+.are:focus h1 {
+  color: white;
+}
+
+#credits, #certificate {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: -10px;
+}
+
+#credits {
+  margin-top: -30px;
+}
+
 @media only screen and (min-width: 767px) {
   header h1 {
     width: 30%;
@@ -325,5 +372,9 @@ footer a {
   }
   header h1 {
     width: 30%;
+  }
+
+  footer {
+    width: 98%;
   }
 }
