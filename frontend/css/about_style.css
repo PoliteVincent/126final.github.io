@@ -90,11 +90,11 @@ nav ul li:focus {
 }
 
 .DropDown:hover .DropBTN {
-  background-color: rgb(123, 175, 212);
+  background-color: rgb(110, 1, 252);
 }
 
 .DropDown:focus .DropBTN {
-  background-color: rgb(123, 175, 212);
+  background-color: rgb(110, 1, 252);
 }
 
 main {

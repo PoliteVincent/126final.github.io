@@ -91,11 +91,11 @@ nav ul li:focus {
 
 
 .DropDown:hover .DropBTN {
-  background-color: rgb(123, 175, 212);
+  background-color: rgb(110, 1, 252);
 }
 
 .DropDown:focus .DropBTN {
-  background-color: rgb(123, 175, 212);
+  background-color: rgb(110, 1, 252);
 }
 
 .main {
@@ -158,7 +158,7 @@ input {
     border: none;
     cursor: pointer;
     transition: all 1s ease;
-    background: linear-gradient(to right, rgb(123, 175, 212) 0%, blue, rgb(0, 48, 135, 0.9));
+    background: linear-gradient(to right, rgb(110, 1, 252) 0%, blue, rgb(0, 48, 135, 0.9));
     background-size: 200%;
   }
   
@@ -202,11 +202,11 @@ input {
   
   .learn-more button:hover {
     transition: background-color 1s ease; 
-    background-color: #ff69b4; 
+    background-color: #e00070; 
   }
 
   .learn-more button:focus {
-    background-color: #ff69b4;
+    background-color: #e00070;
     outline: none; 
   }
   

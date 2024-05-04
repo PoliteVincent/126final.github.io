@@ -89,10 +89,10 @@ nav ul li:focus {
 }
 
 .DropDown:hover .DropBTN {
-  background-color: rgb(123, 175, 212);
+  background-color: rgb(110, 1, 252);
 }
 .DropDown:focus-within .DropBTN {
-  background-color: rgb(123, 175, 212);
+  background-color: rgb(110, 1, 252);
 }
 
 #welcome {
@@ -145,12 +145,12 @@ nav ul li:focus {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  color: black;
+  color: white;
   transition: color 1s;
 }
 
 #video-text:hover {
-  color: white;
+  color: black;
 }
 
 #coaching {
@@ -171,10 +171,10 @@ nav ul li:focus {
 
 #coaching:hover {
   cursor: pointer;
-  background-color: #7bafd4;
+  background-color: rgb(110, 1, 252);
 }
 #coaching:focus {
-  background-color: #7bafd4;
+  background-color:rgb(110, 1, 252);
   outline: none; 
 }
 
@@ -265,7 +265,11 @@ nav ul li:focus {
   padding: 5px;
 }
 .text-content:hover {
-  border: 3px solid #7bafd4;
+  border: 3px solid rgb(110, 1, 252);
+}
+
+.text-content:focus {
+  border: 3px solid rgb(110, 1, 252);
 }
 
 .container {
@@ -289,10 +293,10 @@ nav ul li:focus {
 
 .button button:hover {
   cursor: pointer;
-  background-color: #7bafd4;
+  background-color: rgb(110, 1, 252);
 }
 .button button:focus {
-  background-color: #7bafd4;
+  background-color: rgb(110, 1, 252);
   outline: none; 
 }
 
@@ -379,7 +383,7 @@ nav ul li:focus {
   width: 100%;
   border: none;
   color: white;
-  background-image: linear-gradient(to right, #7bafd4 0%, rgb(0, 48, 135) 100%);
+  background-image: linear-gradient(to right, rgb(110, 1, 252) 0%, rgb(0, 48, 135) 100%);
   cursor: pointer;
   border-radius: 10px;
   background-size: 200% 100%;
@@ -411,12 +415,12 @@ nav ul li:focus {
 
 #ourTeam:hover {
   cursor: pointer;
-  background-color: #7bafd4;
+  background-color: rgb(110, 1, 252);
 }
 
 
 #ourTeam:focus {
-  background-color: #7bafd4;
+  background-color: rgb(110, 1, 252);
   outline: none;
 }
 

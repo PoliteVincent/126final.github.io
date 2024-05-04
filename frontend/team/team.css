@@ -90,10 +90,10 @@ nav ul li:focus {
 }
 
 .DropDown:hover .DropBTN {
-  background-color: rgb(123, 175, 212);
+  background-color: rgb(110, 1, 252);
 }
 .DropDown:focus-within .DropBTN {
-  background-color: rgb(123, 175, 212);
+  background-color: rgb(110, 1, 252);
 }
 
 .headerText {
@@ -143,7 +143,7 @@ nav ul li:focus {
   grid-template-rows: auto auto auto;
   gap: 10px;
   width: 100%;
-  border-top: 3px solid #7bafd4;
+  border-top: 3px solid rgb(110, 1, 252);
 }
 
 .member-flex-1 {
@@ -232,11 +232,11 @@ footer a {
 
 #join-us:hover {
   cursor: pointer;
-  background-color: #7bafd4;
+  background-color: rgb(110, 1, 252);
 }
 
 #join-us:focus {
-  background-color: #7bafd4;
+  background-color: rgb(110, 1, 252);
   outline: none; 
 }
 
@@ -347,7 +347,7 @@ footer a {
     color: white;
     background-image: linear-gradient(
       to right,
-      #7bafd4 0%,
+      rgb(110, 1, 252) 0%,
       rgb(0, 48, 135) 100%
     );
     cursor: pointer;
