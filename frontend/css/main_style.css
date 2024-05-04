@@ -152,6 +152,9 @@ nav ul li:focus {
 #video-text:hover {
   color: black;
 }
+#video-text:focus {
+  color: black;
+}
 
 #coaching {
   text-align: center;
@@ -372,6 +375,13 @@ nav ul li:focus {
 .pic3:hover .Infotext {
   top: 0;
 }
+
+.pic2:focus-within .Infotext,
+.pic1:focus-within .Infotext,
+.pic3:focus-within .Infotext {
+  top: 0;
+}
+
 
 #joinTeam {
   text-align: center;
