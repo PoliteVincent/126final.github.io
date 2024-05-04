@@ -41,6 +41,10 @@ nav ul li {
 nav ul li:hover {
   text-decoration: underline;
 }
+nav ul li:focus {
+  text-decoration: underline;
+  outline: none; 
+}
 
 .menu-item {
   color: white;
@@ -73,11 +77,22 @@ nav ul li:hover {
   background-color: #f1f1f1;
 }
 
+.dropdown-content a:focus {
+  background-color: #f1f1f1;
+  outline: none;
+}
+
 .DropDown:hover .dropdown-content {
+  display: block;
+}
+.DropDown:focus-within .dropdown-content {
   display: block;
 }
 
 .DropDown:hover .DropBTN {
+  background-color: rgb(123, 175, 212);
+}
+.DropDown:focus-within .DropBTN {
   background-color: rgb(123, 175, 212);
 }
 
@@ -108,6 +123,11 @@ nav ul li:hover {
   animation: scale 0.5s forwards;
   cursor: pointer;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.profile-pic img:focus {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  outline: none;
 }
 
 @keyframes scale {
@@ -215,6 +235,11 @@ footer a {
   background-color: #7bafd4;
 }
 
+#join-us:focus {
+  background-color: #7bafd4;
+  outline: none; 
+}
+
 @media only screen and (min-width: 767px) {
   header h1 {
     width: 30%;
@@ -308,6 +333,11 @@ footer a {
     left: 60%;
   }
 
+  .join-pic-hidden:focus-within .Infotext {
+    top: 55%;
+    left: 60%;
+  }
+
   #joinTeam {
     cursor: pointer;
     font-size: 1.1em;
@@ -328,6 +358,10 @@ footer a {
   }
 
   #joinTeam:hover {
+    background-position: left bottom;
+  }
+
+  #joinTeam:focus {
     background-position: left bottom;
   }
 }

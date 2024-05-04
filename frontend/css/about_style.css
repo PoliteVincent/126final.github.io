@@ -42,6 +42,11 @@ nav ul li:hover {
   text-decoration: underline;
 }
 
+nav ul li:focus {
+  text-decoration: underline;
+  outline: none; 
+}
+
 .menu-item {
   color: white;
 }
@@ -72,12 +77,23 @@ nav ul li:hover {
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
+.dropdown-content a:focus {
+  background-color: #f1f1f1;
+  outline: none; 
+}
 
 .DropDown:hover .dropdown-content {
   display: block;
 }
+.DropDown:focus .dropdown-content {
+  display: block;
+}
 
 .DropDown:hover .DropBTN {
+  background-color: rgb(123, 175, 212);
+}
+
+.DropDown:focus .DropBTN {
   background-color: rgb(123, 175, 212);
 }
 
@@ -224,6 +240,25 @@ footer a {
   transition: color 1s ease;
 }
 .are:hover h1 {
+  color: white;
+}
+
+.mission:focus p,
+.mission:focus h1,
+.vision:focus p,
+.vision:focus h1,
+.do:focus p,
+.do:focus h1,
+.are:focus p,
+.are:focus h1 {
+  color: black;
+  outline: none; 
+}
+
+.mission:focus h1,
+.vision:focus h1,
+.do:focus h1,
+.are:focus h1 {
   color: white;
 }
 

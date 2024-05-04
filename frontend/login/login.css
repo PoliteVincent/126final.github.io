@@ -41,6 +41,10 @@ nav ul li {
 nav ul li:hover {
   text-decoration: underline;
 }
+nav ul li:focus {
+  text-decoration: underline;
+  outline: none; 
+}
 
 .menu-item {
   color: white;
@@ -72,12 +76,25 @@ nav ul li:hover {
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
+.dropdown-content a:focus {
+  background-color: #f1f1f1;
+  outline: none; 
+}
 
 .DropDown:hover .dropdown-content {
   display: block;
 }
 
+.DropDown:focus .dropdown-content {
+  display: block;
+}
+
+
 .DropDown:hover .DropBTN {
+  background-color: rgb(123, 175, 212);
+}
+
+.DropDown:focus .DropBTN {
   background-color: rgb(123, 175, 212);
 }
 
@@ -128,6 +145,10 @@ input {
   .sigup input:hover{
     outline: 2px, solid, rgb(0, 48, 135, 0.9); 
   }
+
+  .signup input:focus {
+    outline: 2px solid rgb(0, 48, 135, 0.9);
+  }
   .signup button {
     margin-top: 30px;
     height: 40px;
@@ -143,6 +164,11 @@ input {
   
   .signup button:hover {
     background-position: center right;
+  }
+
+  .signup button:focus {
+    background-position: center right;
+    outline: none; 
   }
   .learn-more {
     display: flex;
@@ -175,9 +201,13 @@ input {
   }
   
   .learn-more button:hover {
-    background-color: #8a2be2; 
     transition: background-color 1s ease; 
     background-color: #ff69b4; 
+  }
+
+  .learn-more button:focus {
+    background-color: #ff69b4;
+    outline: none; 
   }
   
 
@@ -212,6 +242,13 @@ input {
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
+  .pic-container img:focus {
+    animation-name: scaleUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    outline: none; 
+  }
+
   .validation-message {
     display: none;
     background-color: #f3e5f5; 
@@ -253,6 +290,11 @@ input {
   }
 
   .learn-more:hover .introtext{
+    top:30%;
+    left: 10%;
+  }
+
+  .leanrmore:focus-within .introtext{
     top:30%;
     left: 10%;
   }
@@ -359,6 +401,11 @@ input {
   }
 
   .learn-more:hover .introtext{
+    top:35%;
+    left: 25%;
+  }
+
+  .learn-more:focus-within .introtext{
     top:35%;
     left: 25%;
   }
